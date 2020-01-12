@@ -1362,7 +1362,7 @@ int main(int argc, char** argv) {
     motion_vectors.pub.reset(new DiagnosedPublisher<raspicam_node::MotionVectors>(
         imv_pub, state_srv.updater, FrequencyStatusParam(&min_freq, &max_freq, 0.1, 10), TimeStampStatusParam(0, 0.2)));
   }
-  auto cimage_pub = nh_topics.advertise<sensor_msgs::CompressedImage>("image/compressed", 1);
+  auto cimage_pub = nh_topics.advertise<sensor_msgs::CompressedImage>("image_raw/compressed", 1);
   compressed_image.pub.reset(new DiagnosedPublisher<sensor_msgs::CompressedImage>(
       cimage_pub, state_srv.updater, FrequencyStatusParam(&min_freq, &max_freq, 0.1, 10), TimeStampStatusParam(0, 0.2)));
   
