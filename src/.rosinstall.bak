@@ -1,0 +1,15 @@
+- git:
+    local-name: image_common/camera_calibration_parsers
+    uri: https://github.com/ros-gbp/image_common-release.git
+    version: release/melodic/camera_calibration_parsers/1.11.13-0
+- git:
+    local-name: image_common/camera_info_manager
+    uri: https://github.com/ros-gbp/image_common-release.git
+    version: release/melodic/camera_info_manager/1.11.13-0
+- git:
+    local-name: raspicam_node
+    uri: https://github.com/UbiquityRobotics/raspicam_node.git
+- git:
+    local-name: video_stream_opencv
+    uri: https://github.com/ros-drivers/video_stream_opencv-release.git
+    version: release/melodic/video_stream_opencv/1.1.5-0
